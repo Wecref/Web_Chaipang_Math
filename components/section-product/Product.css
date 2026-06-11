@@ -30,10 +30,42 @@ div.contents-card .title img {
     height: auto;
 }
 
-.contents-card .title .math-title img {
+.contents-card .math-title-wrap {
+    position: relative;
     width: 39.33rem;
     max-width: 1180px;
+    margin: 0 auto;
+}
+
+.contents-card .math-title-wrap .math-title {
+    display: block;
+}
+
+.contents-card .math-title-wrap .math-title img {
+    width: 100%;
     height: auto;
+    display: block;
+}
+
+.contents-card .math-title-wrap .title-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2em;
+    font-family: "CookieRun Bold";
+    font-size: 45px;
+    color: #ffffff;
+    line-height: 1.4;
+    box-sizing: border-box;
+}
+
+.contents-card .math-title-wrap .title-text .highlight {
+    color: #a35ff2;
 }
 
 div.contents-card .pink-rectangle {
