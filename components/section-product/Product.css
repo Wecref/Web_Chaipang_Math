@@ -79,11 +79,19 @@ div.contents-card .title img {
 
 #contents-main + span + .contents-card {
     background-image: url(./images/BG_1.png);
-    background-size: 100% auto;
+    background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
     padding-top: 9em;
     min-height: 120.5rem;
+    justify-content: flex-start;
+}
+
+#menu-addition + .contents-card {
+    background-image: url(./images/BG_2.png);
+    background-size: 100% auto;
+    background-position: top center;
+    background-repeat: no-repeat;
     justify-content: flex-start;
 }
 
@@ -201,29 +209,33 @@ div.contents-card .title img {
     color: #a35ff2;
 }
 
-#contents-main + span + .contents-card .showcase-step .step-item:nth-child(2) .step-text {
+#contents-main + span + .contents-card .showcase-step .step-item:nth-child(3) .step-text {
     color: #ffc200;
     bottom: 1em;
 }
 
-#contents-main + span + .contents-card .showcase-step .step-item:first-child .step-text {
-    bottom: 11em;
-}
-
-#contents-main + span + .contents-card .showcase-step .step-item:nth-child(2) .step-text .highlight {
+#contents-main + span + .contents-card .showcase-step .step-item:nth-child(3) .step-text .highlight {
     color: #ffa000;
 }
 
 #contents-main + span + .contents-card .showcase-step .step-buttons {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: .5em;
+    justify-content: center;
 }
 
 #contents-main + span + .contents-card .showcase-step .step-buttons img {
+    width: 7.2rem;
+    max-width: 216px;
+    height: auto;
+}
+
+#contents-main + span + .contents-card .showcase-step > picture:nth-child(4) {
+    align-self: flex-end;
+}
+
+#contents-main + span + .contents-card .showcase-step > picture:nth-child(4) img {
     width: 7.2rem;
     max-width: 216px;
     height: auto;
