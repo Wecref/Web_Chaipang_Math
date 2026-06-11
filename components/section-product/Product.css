@@ -30,7 +30,7 @@ div.contents-card .title img {
     height: auto;
 }
 
-.contents-card .math-title img {
+.contents-card .title .math-title img {
     width: 39.33rem;
     max-width: 1180px;
     height: auto;
