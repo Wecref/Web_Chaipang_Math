@@ -32,6 +32,9 @@
     border-radius: 120px;
     padding: .7em 0em;
     width: 26em;
+    font-family: "NanumSquareEB";
+    font-size: 30px;
+    color: #ffffff;
 }
 
 html[lang="en"] #contents-main .pink-rectangle {
@@ -50,8 +53,14 @@ html[lang="en"] #contents-main .pink-rectangle {
 }
 
 #contents-main .info {
-    color: #6b6b6b;
+    font-family: "NanumSquareB";
+    font-size: 38px;
+    color: #ffffff;
     line-height: 1.5em;
+}
+
+#contents-main .info .TxtNeon00 {
+    color: #a35ff2;
 }
 
 @media screen and (max-width: 425px) {
