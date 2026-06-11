@@ -194,9 +194,9 @@ div.contents-card .title img {
 #contents-main + span + .contents-card .info .texts .screenshots {
     display: flex;
     flex-direction: row;
-    gap: .5em;
+    gap: 0;
     margin: 0;
-    margin-top: -.5em;
+    margin-top: -.98em;
     width: 100%;
     box-sizing: border-box;
 }
@@ -209,6 +209,7 @@ div.contents-card .title img {
     min-width: 0;
     margin-left: 0;
     margin-top: 0;
+    margin-right: 0;
 }
 
 #contents-main + span + .contents-card .showcase-type01 {
