@@ -96,6 +96,24 @@ div.contents-card .title img {
     justify-content: flex-start;
 }
 
+#menu-subtraction + .contents-card {
+    background-image: url(./images/BG_3.png);
+    background-size: 100% auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding: 1em 0 3em;
+    justify-content: flex-start;
+}
+
+#menu-multiplication + .contents-card {
+    background-image: url(./images/BG_4.png);
+    background-size: 100% auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding: 1em 0 3em;
+    justify-content: flex-start;
+}
+
 #menu-addition + .contents-card .info .icon {
     width: 10.53rem;
     max-width: 316px;
@@ -128,10 +146,15 @@ div.contents-card .title img {
     border-radius: 0;
     height: auto;
     box-sizing: border-box;
+    align-items: flex-start;
 }
 
 #menu-addition + .contents-card .info .texts p::before {
     display: none;
+}
+
+#menu-addition + .contents-card .info .texts > div > div:nth-child(2) {
+    margin-left: -.5em;
 }
 
 #contents-main + span + .contents-card .info .texts img {
