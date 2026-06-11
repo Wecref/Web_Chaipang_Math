@@ -52,7 +52,8 @@ div.contents-card .title img {
     position: absolute;
     top: -5%;
     left: 34%;
-    width: 70%;
+    width: auto;
+    right: 2em;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -74,6 +75,13 @@ div.contents-card .title img {
 
 .contents-card .math-title-wrap .title-text .highlight {
     color: #a35ff2;
+}
+
+#contents-main + span + .contents-card {
+    background-image: url(./images/BG_1.png);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
 }
 
 div.contents-card .pink-rectangle {
