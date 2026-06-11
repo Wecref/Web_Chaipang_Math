@@ -90,6 +90,8 @@ div.contents-card .title img {
     max-width: 104px;
     max-height: none;
     height: auto;
+    margin-left: -.8em;
+    margin-top: -.6em;
 }
 
 #contents-main + span + .contents-card .info .icon {
@@ -102,6 +104,45 @@ div.contents-card .title img {
 #contents-main + span + .contents-card .info .texts > div {
     background-color: #f6eeff;
     padding: 1em;
+    padding-left: 0;
+    padding-top: 0;
+    border-radius: .5em;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+#contents-main + span + .contents-card .info .texts > div > div:last-child {
+    align-self: center;
+}
+
+#contents-main + span + .contents-card .info .texts {
+    font-family: "NanumSquareEB";
+    font-size: 1rem;
+    color: #a35ff2;
+}
+
+#contents-main + span + .contents-card .info .texts h1 {
+    color: inherit;
+    font-size: inherit;
+}
+
+#contents-main + span + .contents-card .info .texts p {
+    font-family: "NanumSquareR";
+    font-size: 0.83rem;
+    color: #686868;
+}
+
+#contents-main + span + .contents-card .info .texts p::before {
+    content: "";
+    display: inline-block;
+    width: .53rem;
+    height: .53rem;
+    background-image: url(./images/Star.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: .3em;
+    vertical-align: middle;
 }
 
 div.contents-card .pink-rectangle {
