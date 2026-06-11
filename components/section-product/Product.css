@@ -79,10 +79,12 @@ div.contents-card .title img {
 
 #contents-main + span + .contents-card {
     background-image: url(./images/BG_1.png);
-    background-size: cover;
+    background-size: 100% auto;
     background-position: top center;
     background-repeat: no-repeat;
     padding-top: 9em;
+    min-height: 120.5rem;
+    justify-content: flex-start;
 }
 
 #contents-main + span + .contents-card .info .texts img {
@@ -173,13 +175,37 @@ div.contents-card .title img {
     flex-direction: row;
     justify-content: center;
     gap: 2em;
-    margin-top: 2em;
+    margin: 0;
+    margin-top: -2em;
+}
+
+#contents-main + span + .contents-card .showcase-step .step-item {
+    position: relative;
+}
+
+#contents-main + span + .contents-card .showcase-step .step-text {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-family: "CookieRun Regular";
+    font-size: 1.17rem;
+    color: #b387f9;
+    line-height: 1.4;
+    width: 80%;
+}
+
+#contents-main + span + .contents-card .showcase-step .step-text .highlight {
+    font-family: "CookieRun Bold";
+    color: #a35ff2;
 }
 
 #contents-main + span + .contents-card .showcase-step img {
     width: 14.8rem;
     max-width: 444px;
     height: auto;
+    display: block;
 }
 
 #contents-main + span + .contents-card .info .texts {
@@ -187,6 +213,10 @@ div.contents-card .title img {
     font-size: 1rem;
     color: #a35ff2;
     gap: 1em;
+}
+
+#contents-main + span + .contents-card .pink-rectangle {
+    width: 32em;
 }
 
 #contents-main + span + .contents-card .info .texts h1 {

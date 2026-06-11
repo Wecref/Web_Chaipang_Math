@@ -19,3 +19,8 @@
     font-family: "CookieRun Bold";
     src: url(./Fonts/CookieRunBold.ttf) format("truetype");
 }
+
+@font-face {
+    font-family: "CookieRun Regular";
+    src: url(./Fonts/CookieRunRegular.ttf) format("truetype");
+}

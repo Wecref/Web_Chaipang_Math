@@ -31,12 +31,6 @@ span.TxtNeon00 {
     color: #8e2fea;
 }
 
-.newLine {
-    width: 100%;
-    height: .2em;
-    margin: 5em auto;
-    background-image: linear-gradient(to right, rgba(245, 245, 245, 0), rgba(245, 245, 245, 1), rgba(245, 245, 245, 0));
-}
 
 @media screen and (max-width: 425px) {
     br.en.responsive-break {
