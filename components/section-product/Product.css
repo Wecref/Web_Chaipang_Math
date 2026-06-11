@@ -103,12 +103,15 @@ div.contents-card .title img {
 
 #contents-main + span + .contents-card .info .texts > div {
     background-color: #f6eeff;
-    padding: 1em;
+    padding: 1.5em;
     padding-left: 0;
     padding-top: 0;
+    padding-right: 3em;
     border-radius: .5em;
     align-items: flex-start;
     flex-wrap: nowrap;
+    height: 5.37rem;
+    box-sizing: border-box;
 }
 
 #contents-main + span + .contents-card .info .texts > div > div:last-child {
