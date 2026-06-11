@@ -92,7 +92,15 @@ div.contents-card .title img {
     background-size: 100% auto;
     background-position: top center;
     background-repeat: no-repeat;
+    padding-top: 9em;
     justify-content: flex-start;
+}
+
+#menu-addition + .contents-card .info .icon {
+    width: 10.53rem;
+    max-width: 316px;
+    height: auto;
+    margin: 1em;
 }
 
 #contents-main + span + .contents-card .info .texts img {
