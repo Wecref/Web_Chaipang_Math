@@ -92,7 +92,7 @@ div.contents-card .title img {
     background-size: 100% auto;
     background-position: top center;
     background-repeat: no-repeat;
-    padding-top: 9em;
+    padding: 1em 0 3em;
     justify-content: flex-start;
 }
 
@@ -426,6 +426,7 @@ div.contents-card .link img {
     align-items: center;
     flex-wrap: wrap;
     margin-top: 1.25em;
+    gap: 1em;
 }
 
 .contents-card div.showcase-type02 img {
