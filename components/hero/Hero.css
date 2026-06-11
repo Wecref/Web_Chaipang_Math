@@ -2,12 +2,7 @@
 
 #contents-main {
     width: 100%;
-    height: 30em;
-
-    background-image: url("./images/Math_1.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    position: relative;
 
     display: flex;
     flex-direction: column;
@@ -19,6 +14,17 @@
     text-align: center;
     color: white;
     line-height: 1.25em;
+
+    aspect-ratio: 1920 / 916;
+}
+
+#contents-main .bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
 #contents-main .pink-rectangle {
@@ -36,7 +42,7 @@ html[lang="en"] #contents-main .pink-rectangle {
     margin: 0em;
 }
 
-#contents-main img {
+#contents-main .logo img {
     max-width: 440px;
     width: 13em;
     height: auto;
