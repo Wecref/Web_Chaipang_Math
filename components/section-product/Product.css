@@ -103,6 +103,37 @@ div.contents-card .title img {
     margin: 1em;
 }
 
+#menu-addition + .contents-card .info .texts {
+    font-family: "NanumSquareEB";
+    font-size: 1rem;
+    color: #a35ff2;
+    gap: 1em;
+}
+
+#menu-addition + .contents-card .info .texts h1 {
+    font-size: 1rem;
+    color: #ff75c7;
+    margin: 0em;
+}
+
+#menu-addition + .contents-card .info .texts p {
+    font-family: "NanumSquareR";
+    font-size: 0.83rem;
+    color: #686868;
+}
+
+#menu-addition + .contents-card .info .texts > div {
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    height: auto;
+    box-sizing: border-box;
+}
+
+#menu-addition + .contents-card .info .texts p::before {
+    display: none;
+}
+
 #contents-main + span + .contents-card .info .texts img {
     width: 3.47rem;
     max-width: 104px;
@@ -398,8 +429,8 @@ div.contents-card .link img {
 }
 
 .contents-card div.showcase-type02 img {
-    max-width: 166px;
-    width: 6em;
+    max-width: 176px;
+    width: 5.87rem;
     height: auto;
 }
 
