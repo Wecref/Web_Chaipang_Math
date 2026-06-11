@@ -124,7 +124,9 @@ footer .footer-info .info-list:nth-child(2) picture {
 }
 
 footer .footer-info .info-list:nth-child(2) img {
-    max-width: 9em;
+    width: 6.73rem;
+    max-width: 202px;
+    height: auto;
 }
 
 @media screen and (max-width: 525px) {
