@@ -82,6 +82,26 @@ div.contents-card .title img {
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
+    padding-top: 9em;
+}
+
+#contents-main + span + .contents-card .info .texts img {
+    width: 3.47rem;
+    max-width: 104px;
+    max-height: none;
+    height: auto;
+}
+
+#contents-main + span + .contents-card .info .icon {
+    width: 8.8rem;
+    max-width: 264px;
+    height: auto;
+    margin: 1em;
+}
+
+#contents-main + span + .contents-card .info .texts > div {
+    background-color: #f6eeff;
+    padding: 1em;
 }
 
 div.contents-card .pink-rectangle {
