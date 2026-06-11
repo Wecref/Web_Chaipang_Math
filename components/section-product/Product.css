@@ -201,6 +201,34 @@ div.contents-card .title img {
     color: #a35ff2;
 }
 
+#contents-main + span + .contents-card .showcase-step .step-item:nth-child(2) .step-text {
+    color: #ffc200;
+    bottom: 1em;
+}
+
+#contents-main + span + .contents-card .showcase-step .step-item:first-child .step-text {
+    bottom: 11em;
+}
+
+#contents-main + span + .contents-card .showcase-step .step-item:nth-child(2) .step-text .highlight {
+    color: #ffa000;
+}
+
+#contents-main + span + .contents-card .showcase-step .step-buttons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    gap: .5em;
+}
+
+#contents-main + span + .contents-card .showcase-step .step-buttons img {
+    width: 7.2rem;
+    max-width: 216px;
+    height: auto;
+}
+
 #contents-main + span + .contents-card .showcase-step img {
     width: 14.8rem;
     max-width: 444px;
