@@ -79,7 +79,6 @@ div.contents-card .info .texts img {
     width: 3em;
     height: auto;
     margin-right: 1em;
-
 }
 
 div.contents-card .info .texts h1 {
@@ -110,6 +109,72 @@ div.contents-card .link img {
     margin: 3em .25em;
 }
 
+.contents-card div.showcase-type01 {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 4em;
+}
+
+.contents-card div.showcase-type01 img {
+    max-width: 298px;
+    width: 10em;
+    height: auto;
+}
+
+.contents-card div.showcase-type02 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1.25em;
+}
+
+.contents-card div.showcase-type02 img {
+    max-width: 166px;
+    width: 6em;
+    height: auto;
+}
+
+.contents-card div.showcase-type03 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contents-card div.showcase-type03 div.area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: .25em;
+}
+
+.contents-card div.showcase-type03 img.big {
+    max-width: 447px;
+    width: 15em;
+}
+
+.contents-card div.showcase-type03 div.small {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: .4em;
+}
+
+.contents-card div.showcase-type03 div.small img {
+    max-width: 145px;
+    width: 5em;
+}
+
 @media screen and (max-width: 1024px) {
 
     div.contents-card .pink-rectangle {
@@ -125,5 +190,43 @@ div.contents-card .link img {
 
     div.contents-card .info .icon {
         margin-bottom: 1.5em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .contents-card div.showcase-type01 {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .contents-card div.showcase-type02 {
+        width: 60%;
+    }
+
+    .contents-card div.showcase-type01 img {
+        width: 15em;
+    }
+
+    .contents-card div.showcase-type02 img {
+        width: 10em;
+    }
+
+    .contents-card div.showcase-type03 {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    html[lang="en"] .contents-card .info .texts {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    html[lang="en"] .contents-card .info .texts>div {
+        width: 80%;
+        flex-direction: column;
+        align-items: start;
     }
 }

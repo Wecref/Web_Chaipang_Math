@@ -1,4 +1,4 @@
-import * as nav from './JS/Project/Nav.js';
+import * as nav from './components/nav/Nav.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     nav.InitMenu(document.querySelectorAll('nav .nav-menus a')); // li 대신 a 태그에 이벤트 리스너를 추가합니다.

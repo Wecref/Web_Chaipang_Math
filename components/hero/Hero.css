@@ -4,7 +4,7 @@
     width: 100%;
     height: 30em;
 
-    background-image: url("../Resources/Img/Math_1.png");
+    background-image: url("./images/Math_1.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,6 +28,10 @@
     width: 26em;
 }
 
+html[lang="en"] #contents-main .pink-rectangle {
+    width: 41em;
+}
+
 #contents-main .pink-rectangle p {
     margin: 0em;
 }
@@ -42,4 +46,19 @@
 #contents-main .info {
     color: #6b6b6b;
     line-height: 1.5em;
+}
+
+@media screen and (max-width: 425px) {
+    html[lang="en"] #contents-main {
+        font-size: .8em;
+        line-height: 1em;
+    }
+
+    html[lang="en"] #contents-main .pink-rectangle {
+        width: 95%;
+    }
+
+    html[lang="en"] #contents-main .info p {
+        line-height: 1em;
+    }
 }
