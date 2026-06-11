@@ -17,7 +17,7 @@ div.contents-card .title {
 
 div.contents-card .title p {
     font-family: "NanumSquareEB";
-    font-size: 45px;
+    font-size: 1.5rem;
     color: #6b6b6b;
     margin: 0em;
     margin-top: 1em;
@@ -50,19 +50,26 @@ div.contents-card .title img {
 
 .contents-card .math-title-wrap .title-text {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    top: -5%;
+    left: 34%;
+    width: 70%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 2em;
     font-family: "CookieRun Bold";
-    font-size: 45px;
+    font-size: 1.5rem;
     color: #ffffff;
     line-height: 1.4;
     box-sizing: border-box;
+}
+
+.contents-card .math-title-wrap .title-text p {
+    text-align: left;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    margin: 0;
 }
 
 .contents-card .math-title-wrap .title-text .highlight {
@@ -76,7 +83,8 @@ div.contents-card .pink-rectangle {
     width: 30em;
     margin-top: 2em;
     margin-bottom: 1em;
-    font-size: 1.35em;
+    font-family: "NanumSquareEB";
+    font-size: 1.33rem;
 }
 
 div.contents-card .pink-rectangle p {
