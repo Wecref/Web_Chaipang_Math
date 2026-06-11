@@ -16,7 +16,8 @@ div.contents-card .title {
 }
 
 div.contents-card .title p {
-    font-size: 1.5em;
+    font-family: "NanumSquareEB";
+    font-size: 45px;
     color: #6b6b6b;
     margin: 0em;
     margin-top: 1em;
@@ -26,6 +27,12 @@ div.contents-card .title p {
 div.contents-card .title img {
     max-width: 370px;
     width: 13em;
+    height: auto;
+}
+
+.contents-card .math-title img {
+    width: 39.33rem;
+    max-width: 1180px;
     height: auto;
 }
 
