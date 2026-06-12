@@ -114,6 +114,13 @@ div.contents-card .title img {
     justify-content: flex-start;
 }
 
+#menu-multiplication + .contents-card .info .icon {
+    width: 10.53rem;
+    max-width: 316px;
+    height: auto;
+    margin: 1em;
+}
+
 #menu-addition + .contents-card .info .icon {
     width: 10.53rem;
     max-width: 316px;
@@ -126,6 +133,22 @@ div.contents-card .title img {
     max-width: 316px;
     height: auto;
     margin: 1em;
+}
+
+#menu-subtraction + .contents-card .pink-rectangle {
+    background-color: #ffa300;
+}
+
+#menu-subtraction + .contents-card .info .texts h1 {
+    font-size: 1rem;
+    color: #ffa300;
+    margin: 0em;
+}
+
+#menu-subtraction + .contents-card .info .texts p {
+    font-family: "NanumSquareR";
+    font-size: 0.83rem;
+    color: #686868;
 }
 
 #menu-addition + .contents-card .info .texts {
@@ -161,6 +184,55 @@ div.contents-card .title img {
 }
 
 #menu-addition + .contents-card .info .texts > div > div:nth-child(2) {
+    margin-left: -.5em;
+}
+
+#menu-subtraction + .contents-card .info .texts,
+#menu-multiplication + .contents-card .info .texts {
+    font-family: "NanumSquareEB";
+    font-size: 1rem;
+    color: #a35ff2;
+    gap: 1em;
+}
+
+#menu-subtraction + .contents-card .info .texts h1,
+#menu-multiplication + .contents-card .info .texts h1 {
+    font-size: 1rem;
+    margin: 0em;
+}
+
+#menu-multiplication + .contents-card .info .texts h1 {
+    color: #ff75c7;
+}
+
+#menu-subtraction + .contents-card .info .texts h1 {
+    color: #ffa300;
+}
+
+#menu-subtraction + .contents-card .info .texts p,
+#menu-multiplication + .contents-card .info .texts p {
+    font-family: "NanumSquareR";
+    font-size: 0.83rem;
+    color: #686868;
+}
+
+#menu-subtraction + .contents-card .info .texts > div,
+#menu-multiplication + .contents-card .info .texts > div {
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    height: auto;
+    box-sizing: border-box;
+    align-items: flex-start;
+}
+
+#menu-subtraction + .contents-card .info .texts p::before,
+#menu-multiplication + .contents-card .info .texts p::before {
+    display: none;
+}
+
+#menu-subtraction + .contents-card .info .texts > div > div:nth-child(2),
+#menu-multiplication + .contents-card .info .texts > div > div:nth-child(2) {
     margin-left: -.5em;
 }
 
