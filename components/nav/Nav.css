@@ -3,7 +3,6 @@
 nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
 
     background-color: #fff;
@@ -20,10 +19,16 @@ nav {
     padding: 1em;
 }
 
+html[lang="en"] nav {
+    font-size: 16px;
+    height: 5em;
+}
+
 .nav-header {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-right: auto;
 }
 
 .logo {
@@ -40,6 +45,7 @@ nav {
     background: none;
     border: none;
     cursor: pointer;
+    margin-left: auto;
 }
 
 .menu-toggle img {
