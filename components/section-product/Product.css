@@ -92,7 +92,7 @@ div.contents-card .title img {
     background-size: 100% auto;
     background-position: top center;
     background-repeat: no-repeat;
-    padding-bottom: 3em;
+    padding-bottom: 6em;
     justify-content: flex-start;
 }
 
@@ -430,8 +430,8 @@ div.contents-card .pink-rectangle {
     border-radius: 120px;
     padding: .5em 0em;
     width: 30em;
-    margin-top: 2em;
-    margin-bottom: 1em;
+    margin-top: 1em;
+    margin-bottom: .5em;
     font-family: "NanumSquareEB";
     font-size: 1.33rem;
 }
