@@ -77,6 +77,14 @@ div.contents-card .title img {
     color: #a35ff2;
 }
 
+html[lang="en"] .contents-card .math-title-wrap .title-text {
+    right: 2em;
+    left: auto;
+    max-width: 65%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 #contents-main + span + .contents-card {
     background-image: url(./images/BG_1.png);
     background-size: cover;
