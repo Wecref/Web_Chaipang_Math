@@ -35,10 +35,12 @@
     font-family: "NanumSquareEB";
     font-size: 30px;
     color: #ffffff;
+    margin-top: -2em;
 }
 
 html[lang="en"] #contents-main .pink-rectangle {
-    width: 53.3em;
+    width: 39em;
+    margin-top: -2em;
 }
 
 #contents-main .pink-rectangle p {
@@ -46,10 +48,15 @@ html[lang="en"] #contents-main .pink-rectangle {
 }
 
 #contents-main .logo img {
-    max-width: 440px;
-    width: 13em;
+    max-width: 580px;
+    width: 19.33rem;
     height: auto;
-    padding: 2em 0em;
+    padding: 1.5em 0 1em;
+}
+
+html[lang="en"] #contents-main .logo img {
+    padding-top: 1em;
+    padding-bottom: 0;
 }
 
 #contents-main .info {
@@ -59,21 +66,10 @@ html[lang="en"] #contents-main .pink-rectangle {
     line-height: 1.5em;
 }
 
-#contents-main .info .TxtNeon00 {
-    color: #a35ff2;
+#contents-main .info p {
+    margin: 0;
 }
 
-@media screen and (max-width: 425px) {
-    html[lang="en"] #contents-main {
-        font-size: .8em;
-        line-height: 1em;
-    }
-
-    html[lang="en"] #contents-main .pink-rectangle {
-        width: 95%;
-    }
-
-    html[lang="en"] #contents-main .info p {
-        line-height: 1em;
-    }
+#contents-main .info .TxtNeon00 {
+    color: #a35ff2;
 }
