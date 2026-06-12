@@ -139,6 +139,10 @@ div.contents-card .title img {
     background-color: #ffa300;
 }
 
+#menu-multiplication + .contents-card .pink-rectangle {
+    background-color: #e164ff;
+}
+
 #menu-subtraction + .contents-card .info .texts h1 {
     font-size: 1rem;
     color: #ffa300;
@@ -202,7 +206,7 @@ div.contents-card .title img {
 }
 
 #menu-multiplication + .contents-card .info .texts h1 {
-    color: #ff75c7;
+    color: #e164ff;
 }
 
 #menu-subtraction + .contents-card .info .texts h1 {
