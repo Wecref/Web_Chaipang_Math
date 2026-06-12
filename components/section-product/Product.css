@@ -121,6 +121,13 @@ div.contents-card .title img {
     margin: 1em;
 }
 
+#menu-subtraction + .contents-card .info .icon {
+    width: 10.53rem;
+    max-width: 316px;
+    height: auto;
+    margin: 1em;
+}
+
 #menu-addition + .contents-card .info .texts {
     font-family: "NanumSquareEB";
     font-size: 1rem;
