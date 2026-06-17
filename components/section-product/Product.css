@@ -182,6 +182,10 @@ html[lang="en"] .contents-card .math-title-wrap .title-text {
     color: #686868;
 }
 
+html[lang="en"] #menu-addition + .contents-card .pink-rectangle {
+    width: 39em;
+}
+
 #menu-addition + .contents-card .info .texts > div {
     background: none;
     padding: 0;
