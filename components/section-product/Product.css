@@ -282,6 +282,7 @@ html[lang="en"] .contents-card .math-title-wrap .title-text {
     margin-left: -.6em;
 }
 
+
 #contents-main + span + .contents-card .info .texts .screenshots {
     display: flex;
     flex-direction: row;
@@ -350,12 +351,17 @@ html[lang="en"] .contents-card .math-title-wrap .title-text {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     font-family: "CookieRun Regular";
     font-size: 1.17rem;
     color: #b387f9;
     line-height: 1.4;
-    width: 80%;
+    width: 11.84rem;
+    height: 7.25rem;
 }
 
 #contents-main + span + .contents-card .showcase-step .step-text .highlight {
@@ -365,7 +371,6 @@ html[lang="en"] .contents-card .math-title-wrap .title-text {
 
 #contents-main + span + .contents-card .showcase-step .step-item:nth-child(3) .step-text {
     color: #ffc200;
-    bottom: 1em;
 }
 
 #contents-main + span + .contents-card .showcase-step .step-item:nth-child(3) .step-text .highlight {
