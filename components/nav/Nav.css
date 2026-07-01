@@ -13,15 +13,9 @@ nav {
     height: 3em;
 
     font-family: "NanumSquareB";
-    font-size: 20px;
     color: #6b6b6b;
 
-    padding: 1em;
-}
-
-html[lang="en"] nav {
-    font-size: 16px;
-    height: 5em;
+    padding: .1em 1em;
 }
 
 .nav-header {
@@ -88,7 +82,7 @@ html[lang="en"] nav {
 .language-selector li a {
     color: inherit;
     padding: 0 .5em;
-    font-size: 1em;
+    font-size: .6em;
 }
 
 .nav-menus li a:hover,
@@ -107,14 +101,14 @@ html[lang="en"] nav {
 .social-links {
     background-color: #AFAFAF;
     border-radius: 100em;
-    width: 6em;
-    height: 1.5em;
+    width: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: .3em;
 
     margin: 0 .5em;
-    padding: 0em .3em;
+    padding: 0 .4em;
 }
 
 .social-links li a {
@@ -143,33 +137,21 @@ html[lang="en"] nav {
     color: #ff5a96;
 }
 
-@media screen and (max-width: 1820px) {
-    html[lang="en"] nav {
-        font-size: .9em;
-    }
-}
-
-@media screen and (max-width: 1649px) {
-    html[lang="en"] nav {
-        font-size: .8em;
-    }
-}
-
-@media screen and (max-width: 1475px) {
-    html[lang="en"] nav {
-        font-size: .7em;
-    }
-}
-
 @media screen and (max-width: 1024px) {
     nav {
         flex-direction: column;
-        height: 4em;
+        height: auto;
+    }
+
+    nav:has(.nav-body.active) {
+        justify-content: flex-start;
     }
 
     .nav-header {
         width: 100%;
+        display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     .nav-menus {
@@ -181,15 +163,23 @@ html[lang="en"] nav {
     }
 
     .nav-body {
-        width: 110%;
+        width: 100%;
         background-color: #fff;
 
         display: none;
         flex-direction: column;
-        padding: 1em 0;
-
+        padding: 0;
 
         font-size: 1.5em;
+    }
+
+    .nav-body.active {
+        display: flex;
+        padding: .1em 1em;
+    }
+
+    .social-links {
+        padding: 0 .6em;
     }
 
     .nav-menus li a,
@@ -203,8 +193,16 @@ html[lang="en"] nav {
     }
 }
 
+@media screen and (max-width: 768px) {
+    nav {
+        height: auto;
+        min-height: 3em;
+    }
+}
+
 @media screen and (max-width: 425px) {
     nav {
-        height: 5em;
+        height: auto;
+        min-height: 3em;
     }
 }

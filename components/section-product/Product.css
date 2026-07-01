@@ -6,6 +6,44 @@ div.contents-card {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    font-size: 1em;
+}
+
+@media screen and (max-width: 1024px) {
+    div.contents-card {
+        font-size: .95em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    div.contents-card {
+        font-size: .9em;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    div.contents-card {
+        font-size: .85em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    div.contents-card {
+        font-size: .7em;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    div.contents-card {
+        font-size: .6em;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    div.contents-card {
+        font-size: .5em;
+    }
 }
 
 div.contents-card .title {
@@ -17,7 +55,7 @@ div.contents-card .title {
 
 div.contents-card .title p {
     font-family: "NanumSquareEB";
-    font-size: 1.5rem;
+    font-size: 1.5em;
     color: #6b6b6b;
     margin: 0em;
     margin-top: 1em;
@@ -32,7 +70,7 @@ div.contents-card .title img {
 
 .contents-card .math-title-wrap {
     position: relative;
-    width: 39.33rem;
+    width: 39.33em;
     max-width: 1180px;
     margin: 0 auto;
 }
@@ -59,7 +97,7 @@ div.contents-card .title img {
     flex-direction: column;
     justify-content: center;
     font-family: "CookieRun Bold";
-    font-size: 1.5rem;
+    font-size: 1.5em;
     color: #ffffff;
     line-height: 1.4;
     box-sizing: border-box;
@@ -91,7 +129,7 @@ html[lang="en"] .contents-card .math-title-wrap .title-text {
     background-position: top center;
     background-repeat: no-repeat;
     padding-top: 4em;
-    min-height: 120.5rem;
+    min-height: 120.5em;
     justify-content: flex-start;
 }
 
@@ -118,26 +156,26 @@ html[lang="en"] .contents-card .math-title-wrap .title-text {
     background-size: 100% auto;
     background-position: top center;
     background-repeat: no-repeat;
-    padding: 1em 0 3em;
+    padding: 1em 0 0;
     justify-content: flex-start;
 }
 
 #menu-multiplication + .contents-card .info .icon {
-    width: 10.53rem;
+    width: 10.53em;
     max-width: 316px;
     height: auto;
     margin: 1em;
 }
 
 #menu-addition + .contents-card .info .icon {
-    width: 10.53rem;
+    width: 10.53em;
     max-width: 316px;
     height: auto;
     margin: 1em;
 }
 
 #menu-subtraction + .contents-card .info .icon {
-    width: 10.53rem;
+    width: 10.53em;
     max-width: 316px;
     height: auto;
     margin: 1em;
@@ -152,38 +190,34 @@ html[lang="en"] .contents-card .math-title-wrap .title-text {
 }
 
 #menu-subtraction + .contents-card .info .texts h1 {
-    font-size: 1rem;
+    font-size: 1em;
     color: #ffa300;
     margin: 0em;
 }
 
 #menu-subtraction + .contents-card .info .texts p {
     font-family: "NanumSquareR";
-    font-size: 0.83rem;
+    font-size: 0.83em;
     color: #686868;
 }
 
 #menu-addition + .contents-card .info .texts {
     font-family: "NanumSquareEB";
-    font-size: 1rem;
+    font-size: 1em;
     color: #a35ff2;
     gap: 1em;
 }
 
 #menu-addition + .contents-card .info .texts h1 {
-    font-size: 1rem;
+    font-size: 1em;
     color: #ff75c7;
     margin: 0em;
 }
 
 #menu-addition + .contents-card .info .texts p {
     font-family: "NanumSquareR";
-    font-size: 0.83rem;
+    font-size: 0.83em;
     color: #686868;
-}
-
-html[lang="en"] #menu-addition + .contents-card .pink-rectangle {
-    width: 39em;
 }
 
 #menu-addition + .contents-card .info .texts > div {
@@ -206,14 +240,14 @@ html[lang="en"] #menu-addition + .contents-card .pink-rectangle {
 #menu-subtraction + .contents-card .info .texts,
 #menu-multiplication + .contents-card .info .texts {
     font-family: "NanumSquareEB";
-    font-size: 1rem;
+    font-size: 1em;
     color: #a35ff2;
     gap: 1em;
 }
 
 #menu-subtraction + .contents-card .info .texts h1,
 #menu-multiplication + .contents-card .info .texts h1 {
-    font-size: 1rem;
+    font-size: 1em;
     margin: 0em;
 }
 
@@ -228,7 +262,7 @@ html[lang="en"] #menu-addition + .contents-card .pink-rectangle {
 #menu-subtraction + .contents-card .info .texts p,
 #menu-multiplication + .contents-card .info .texts p {
     font-family: "NanumSquareR";
-    font-size: 0.83rem;
+    font-size: 0.83em;
     color: #686868;
 }
 
@@ -253,7 +287,7 @@ html[lang="en"] #menu-addition + .contents-card .pink-rectangle {
 }
 
 #contents-main + span + .contents-card .info .texts img {
-    width: 3.47rem;
+    width: 3.47em;
     max-width: 104px;
     max-height: none;
     height: auto;
@@ -262,7 +296,7 @@ html[lang="en"] #menu-addition + .contents-card .pink-rectangle {
 }
 
 #contents-main + span + .contents-card .info .icon {
-    width: 8.8rem;
+    width: 8.8em;
     max-width: 264px;
     height: auto;
     margin: 1em;
@@ -277,7 +311,7 @@ html[lang="en"] #menu-addition + .contents-card .pink-rectangle {
     border-radius: .5em;
     align-items: flex-start;
     flex-wrap: wrap;
-    height: 4.33rem;
+    height: 4.33em;
     box-sizing: border-box;
 }
 
@@ -285,7 +319,6 @@ html[lang="en"] #menu-addition + .contents-card .pink-rectangle {
     align-self: flex-start;
     margin-left: -.6em;
 }
-
 
 #contents-main + span + .contents-card .info .texts .screenshots {
     display: flex;
@@ -298,7 +331,7 @@ html[lang="en"] #menu-addition + .contents-card .pink-rectangle {
 }
 
 #contents-main + span + .contents-card .info .texts .screenshots img {
-    width: 8.8rem;
+    width: 8.8em;
     max-width: 264px;
     height: auto;
     flex-shrink: 1;
@@ -315,11 +348,11 @@ html[lang="en"] #menu-addition + .contents-card .pink-rectangle {
     justify-content: center;
     align-items: center;
     gap: .5em;
-    margin-top: .5rem;
+    margin-top: .5em;
 }
 
 #contents-main + span + .contents-card .showcase-type01 img {
-    width: 8.8rem;
+    width: 8.8em;
     max-width: 264px;
     height: auto;
 }
@@ -332,7 +365,7 @@ html[lang="en"] #menu-addition + .contents-card .pink-rectangle {
 }
 
 #contents-main + span + .contents-card .showcase-type03 img {
-    width: 47.73rem;
+    width: 47.73em;
     max-width: 1432px;
     height: auto;
 }
@@ -341,7 +374,7 @@ html[lang="en"] #menu-addition + .contents-card .pink-rectangle {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 2em;
+    gap: 1em;
     margin: 0;
     margin-top: -2em;
 }
@@ -361,11 +394,11 @@ html[lang="en"] #menu-addition + .contents-card .pink-rectangle {
     justify-content: center;
     text-align: center;
     font-family: "CookieRun Regular";
-    font-size: 1.17rem;
+    font-size: 1.17em;
     color: #b387f9;
     line-height: 1.4;
     width: 100%;
-    height: 7.25rem;
+    height: 7.25em;
 }
 
 #contents-main + span + .contents-card .showcase-step .step-text .highlight {
@@ -389,23 +422,23 @@ html[lang="en"] #menu-addition + .contents-card .pink-rectangle {
 }
 
 #contents-main + span + .contents-card .showcase-step .step-buttons img {
-    width: 7.2rem;
+    width: 7.2em;
     max-width: 216px;
     height: auto;
 }
 
-#contents-main + span + .contents-card .showcase-step > picture:nth-child(4) {
+#contents-main + span + .contents-card .showcase-step > a:nth-child(4) {
     align-self: flex-end;
 }
 
-#contents-main + span + .contents-card .showcase-step > picture:nth-child(4) img {
-    width: 7.2rem;
+#contents-main + span + .contents-card .showcase-step > a:nth-child(4) img {
+    width: 7.2em;
     max-width: 216px;
     height: auto;
 }
 
 #contents-main + span + .contents-card .showcase-step img {
-    width: 14.8rem;
+    width: 14.8em;
     max-width: 444px;
     height: auto;
     display: block;
@@ -413,13 +446,9 @@ html[lang="en"] #menu-addition + .contents-card .pink-rectangle {
 
 #contents-main + span + .contents-card .info .texts {
     font-family: "NanumSquareEB";
-    font-size: 1rem;
+    font-size: 1em;
     color: #a35ff2;
     gap: 1em;
-}
-
-#contents-main + span + .contents-card .pink-rectangle {
-    width: 32em;
 }
 
 #contents-main + span + .contents-card .info .texts h1 {
@@ -429,15 +458,15 @@ html[lang="en"] #menu-addition + .contents-card .pink-rectangle {
 
 #contents-main + span + .contents-card .info .texts p {
     font-family: "NanumSquareR";
-    font-size: 0.83rem;
+    font-size: 0.83em;
     color: #686868;
 }
 
 #contents-main + span + .contents-card .info .texts p::before {
     content: "";
     display: inline-block;
-    width: .53rem;
-    height: .53rem;
+    width: .53em;
+    height: .53em;
     background-image: url(./images/Star.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -449,12 +478,12 @@ html[lang="en"] #menu-addition + .contents-card .pink-rectangle {
 div.contents-card .pink-rectangle {
     background-color: #ff75c7;
     border-radius: 120px;
-    padding: .5em 0em;
-    width: 30em;
+    padding: .5em 1.5em;
+    width: 27em;
     margin-top: 1em;
     margin-bottom: .5em;
     font-family: "NanumSquareEB";
-    font-size: 1.33rem;
+    font-size: 1.33em;
 }
 
 div.contents-card .pink-rectangle p {
@@ -522,9 +551,9 @@ div.contents-card .link {
 
 div.contents-card .link img {
     max-width: 208px;
-    width: 6.93rem;
+    width: 6.93em;
     height: auto;
-    margin: 1.33rem .25em 3em .25em;
+    margin: 1.33em .25em 3em .25em;
 }
 
 .contents-card div.showcase-type01 {
@@ -555,7 +584,7 @@ div.contents-card .link img {
 
 .contents-card div.showcase-type02 img {
     max-width: 176px;
-    width: 5.87rem;
+    width: 5.87em;
     height: auto;
 }
 
@@ -592,60 +621,4 @@ div.contents-card .link img {
 .contents-card div.showcase-type03 div.small img {
     max-width: 145px;
     width: 5em;
-}
-
-@media screen and (max-width: 1024px) {
-
-    div.contents-card .pink-rectangle {
-        font-size: 1em;
-    }
-
-    div.contents-card .info {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        font-size: 1.25em;
-    }
-
-    div.contents-card .info .icon {
-        margin-bottom: 1.5em;
-    }
-}
-
-@media screen and (max-width: 768px) {
-
-    .contents-card div.showcase-type01 {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .contents-card div.showcase-type02 {
-        width: 60%;
-    }
-
-    .contents-card div.showcase-type01 img {
-        width: 15em;
-    }
-
-    .contents-card div.showcase-type02 img {
-        width: 10em;
-    }
-
-    .contents-card div.showcase-type03 {
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    html[lang="en"] .contents-card .info .texts {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    html[lang="en"] .contents-card .info .texts>div {
-        width: 80%;
-        flex-direction: column;
-        align-items: start;
-    }
 }

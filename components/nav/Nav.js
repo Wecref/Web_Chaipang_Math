@@ -9,7 +9,8 @@ export function InitMenu(targets) {
             event.preventDefault();
             ClickCss(event.currentTarget, targets);
             if (event.currentTarget.href) {
-                window.open(event.currentTarget.href, "_self");
+                var isExternal = event.currentTarget.hostname !== window.location.hostname;
+                window.open(event.currentTarget.href, isExternal ? "_blank" : "_self");
             }
         });
     });

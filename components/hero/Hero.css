@@ -3,6 +3,24 @@
 #contents-main {
     width: 100%;
     position: relative;
+}
+
+#contents-main > picture:first-child {
+    display: block;
+    width: 100%;
+}
+
+#contents-main > picture:first-child img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#contents-main .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     display: flex;
     flex-direction: column;
@@ -10,37 +28,64 @@
     justify-content: center;
 
     font-family: "NanumSquareB";
-    font-size: 1.2em;
     text-align: center;
     color: white;
-    line-height: 1.25em;
+    line-height: 1.25;
 
-    aspect-ratio: 1920 / 916;
+    width: 100%;
+
+    font-size: 1em;
 }
 
-#contents-main .bg-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+@media screen and (max-width: 1024px) {
+    #contents-main .hero-content {
+        font-size: .95em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #contents-main .hero-content {
+        font-size: .9em;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    #contents-main .hero-content {
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #contents-main .hero-content {
+        font-size: .7em;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #contents-main .hero-content {
+        font-size: .6em;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #contents-main .hero-content {
+        font-size: .5em;
+    }
 }
 
 #contents-main .pink-rectangle {
     background-color: #ff75c7;
-    border-radius: 120px;
-    padding: .7em 0em;
-    width: 27.8em;
+    border-radius: 4em;
+    padding: .7em 1.5em;
+    width: auto;
     font-family: "NanumSquareEB";
-    font-size: 30px;
+    font-size: 1em;
     color: #ffffff;
     margin-top: -2em;
 }
 
 html[lang="en"] #contents-main .pink-rectangle {
-    width: 39em;
-    margin-top: -2em;
+    font-size: .9em;
 }
 
 #contents-main .pink-rectangle p {
@@ -49,7 +94,7 @@ html[lang="en"] #contents-main .pink-rectangle {
 
 #contents-main .logo img {
     max-width: 580px;
-    width: 19.33rem;
+    width: 19.33em;
     height: auto;
     padding: 1.5em 0 1em;
 }
@@ -61,9 +106,13 @@ html[lang="en"] #contents-main .logo img {
 
 #contents-main .info {
     font-family: "NanumSquareB";
-    font-size: 38px;
+    font-size: 1.267em;
     color: #ffffff;
-    line-height: 1.5em;
+    line-height: 1.5;
+}
+
+html[lang="en"] #contents-main .info {
+    font-size: 1.1em;
 }
 
 #contents-main .info p {
