@@ -8,6 +8,23 @@ div.contents-card {
     align-items: center;
 
     font-size: 1em;
+    position: relative;
+}
+
+.contents-card > picture.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.contents-card > picture.bg img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 @media screen and (max-width: 1024px) {
@@ -119,43 +136,30 @@ html[lang="en"] .contents-card .math-title-wrap .title-text {
     right: 2em;
     left: auto;
     max-width: 65%;
-    top: 50%;
-    transform: translateY(-50%);
+    top: -5%;
+    transform: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #contents-main + span + .contents-card {
-    background-image: url(./images/BG_1.png);
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat;
     padding-top: 4em;
-    min-height: 120.5em;
+    padding-bottom: 14em;
     justify-content: flex-start;
 }
 
 #menu-addition + .contents-card {
-    background-image: url(./images/BG_2.png);
-    background-size: 100% auto;
-    background-position: top center;
-    background-repeat: no-repeat;
     padding-bottom: 6em;
     justify-content: flex-start;
 }
 
 #menu-subtraction + .contents-card {
-    background-image: url(./images/BG_3.png);
-    background-size: 100% auto;
-    background-position: top center;
-    background-repeat: no-repeat;
-    padding: 1em 0 3em;
+    padding: 1em 0 5em;
     justify-content: flex-start;
 }
 
 #menu-multiplication + .contents-card {
-    background-image: url(./images/BG_4.png);
-    background-size: 100% auto;
-    background-position: top center;
-    background-repeat: no-repeat;
     padding: 1em 0 0;
     justify-content: flex-start;
 }
@@ -399,6 +403,7 @@ html[lang="en"] .contents-card .math-title-wrap .title-text {
     line-height: 1.4;
     width: 100%;
     height: 7.25em;
+    bottom: -.5em;
 }
 
 #contents-main + span + .contents-card .showcase-step .step-text .highlight {
@@ -473,6 +478,10 @@ html[lang="en"] .contents-card .math-title-wrap .title-text {
     background-position: center;
     margin-right: .3em;
     vertical-align: middle;
+}
+
+#contents-main + span + .contents-card .info .texts > div:not(.screenshots) > div p:nth-child(3)::before {
+    visibility: hidden;
 }
 
 div.contents-card .pink-rectangle {
@@ -621,4 +630,25 @@ div.contents-card .link img {
 .contents-card div.showcase-type03 div.small img {
     max-width: 145px;
     width: 5em;
+}
+
+@media screen and (max-width: 425px) {
+    #contents-main + span + .contents-card {
+        padding-bottom: 20em;
+    }
+    #menu-addition + .contents-card {
+        padding-bottom: 12em;
+    }
+    #menu-subtraction + .contents-card {
+        padding: 1em 0 9em;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #contents-main + span + .contents-card {
+        padding-bottom: 26em;
+    }
+    #menu-subtraction + .contents-card {
+        padding: 1em 0 11em;
+    }
 }

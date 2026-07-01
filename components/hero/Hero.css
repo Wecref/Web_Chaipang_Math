@@ -25,7 +25,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 
     font-family: "NanumSquareB";
     text-align: center;
@@ -35,6 +35,7 @@
     width: 100%;
 
     font-size: 1em;
+    padding-top: 8%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -96,12 +97,12 @@ html[lang="en"] #contents-main .pink-rectangle {
     max-width: 580px;
     width: 19.33em;
     height: auto;
-    padding: 1.5em 0 1em;
+    padding: 1em 0 0.5em;
 }
 
 html[lang="en"] #contents-main .logo img {
-    padding-top: 1em;
-    padding-bottom: 0;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 }
 
 #contents-main .info {
@@ -109,6 +110,7 @@ html[lang="en"] #contents-main .logo img {
     font-size: 1.267em;
     color: #ffffff;
     line-height: 1.5;
+    margin-top: 0.3em;
 }
 
 html[lang="en"] #contents-main .info {
