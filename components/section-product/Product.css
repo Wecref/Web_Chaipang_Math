@@ -484,6 +484,27 @@ html[lang="en"] .contents-card .math-title-wrap .title-text {
     visibility: hidden;
 }
 
+body > div:nth-child(5) > div.info > div > div:nth-child(1) > div,
+body > div:nth-child(5) > div.info > div > div:nth-child(2) > div,
+body > div:nth-child(5) > div.info > div > div:nth-child(4) > div {
+    padding-top: .3em;
+}
+
+body > div:nth-child(7) > div.info > div > div:nth-child(1) > div,
+body > div:nth-child(7) > div.info > div > div:nth-child(2) > div,
+body > div:nth-child(7) > div.info > div > div:nth-child(3) > div,
+body > div:nth-child(9) > div.info > div > div:nth-child(1) > div,
+body > div:nth-child(9) > div.info > div > div:nth-child(2) > div,
+body > div:nth-child(9) > div.info > div > div:nth-child(3) > div {
+    padding-top: 0.5em;
+}
+
+body > div:nth-child(11) > div.info > div > div:nth-child(1) > div,
+body > div:nth-child(11) > div.info > div > div:nth-child(2) > div,
+body > div:nth-child(11) > div.info > div > div:nth-child(3) > div {
+    padding-top: .5em;
+}
+
 div.contents-card .pink-rectangle {
     background-color: #ff75c7;
     border-radius: 120px;
