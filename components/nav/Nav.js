@@ -32,7 +32,7 @@ export function InitMenu(targets) {
                     var nav = document.querySelector('nav');
                     var navH = nav ? nav.offsetHeight : 0;
                     var rect = el.getBoundingClientRect();
-                    window.scrollTo(0, window.pageYOffset + rect.top - navH);
+                    smoothScroll(window.pageYOffset + rect.top - navH, 500);
                 }
             } else {
                 event.preventDefault();

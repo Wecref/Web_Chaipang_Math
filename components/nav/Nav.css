@@ -103,8 +103,8 @@ nav {
     background-color: #AFAFAF;
     border-radius: 100em;
     width: fit-content;
+    height: auto;
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: .3em;
 
@@ -112,9 +112,23 @@ nav {
     padding: 0 .4em;
 }
 
-.social-links li a {
+.social-links li {
     display: flex;
-    padding: 0 .3em;
+    align-items: center;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+}
+
+.social-links li a {
+    padding: .35em .5em;
+}
+
+.social-links picture {
+    display: flex;
+    align-items: center;
 }
 
 .social-links img {
