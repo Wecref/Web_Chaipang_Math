@@ -16,12 +16,7 @@
     height: auto;
 }
 
-#contents-main .hero-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
+.hero-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,98 +24,102 @@
 
     font-family: "NanumSquareB";
     text-align: center;
-    color: white;
+    color: #1a1a1a;
     line-height: 1.25;
 
     width: 100%;
 
-    font-size: 1em;
-    padding-top: 8%;
+    padding-top: 1em;
+    padding-bottom: 4em;
 }
 
-@media screen and (max-width: 1024px) {
-    #contents-main .hero-content {
-        font-size: .95em;
-    }
+.hero-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    width: 100%;
 }
 
-@media screen and (max-width: 768px) {
-    #contents-main .hero-content {
-        font-size: .9em;
-    }
+.hero-images .side img {
+    display: block;
+    width: auto;
+    height: 11.25vw;
+    max-height: 216px;
 }
 
-@media screen and (max-width: 525px) {
-    #contents-main .hero-content {
-        font-size: .8em;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    #contents-main .hero-content {
-        font-size: .7em;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    #contents-main .hero-content {
-        font-size: .6em;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    #contents-main .hero-content {
-        font-size: .5em;
-    }
-}
-
-#contents-main .pink-rectangle {
+.hero-content .pink-rectangle {
     background-color: #ff75c7;
     border-radius: 4em;
     padding: .7em 1.5em;
     width: auto;
     font-family: "NanumSquareEB";
-    font-size: 1em;
+    font-size: clamp(12px, 1.5625vw, 30px);
     color: #ffffff;
-    margin-top: -2em;
 }
 
-html[lang="en"] #contents-main .pink-rectangle {
-    font-size: .9em;
-}
-
-#contents-main .pink-rectangle p {
+.hero-content .pink-rectangle p {
     margin: 0em;
 }
 
-#contents-main .logo img {
+.hero-content .logo img {
     max-width: 580px;
     width: 19.33em;
     height: auto;
-    padding: 1em 0 0.5em;
+    padding: .7em 0 .5em;
 }
 
-html[lang="en"] #contents-main .logo img {
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-}
-
-#contents-main .info {
+.hero-content .info {
     font-family: "NanumSquareB";
-    font-size: 1.267em;
-    color: #ffffff;
+    font-size: 1.2em;
+    color: #1a1a1a;
     line-height: 1.5;
     margin-top: 0.3em;
 }
 
-html[lang="en"] #contents-main .info {
-    font-size: 1.1em;
-}
-
-#contents-main .info p {
+.hero-content .info p {
     margin: 0;
+    color: #ffc72e;
+    font-size: clamp(12px, 1.979vw, 38px);
 }
 
-#contents-main .info .TxtNeon00 {
+.hero-content .info .TxtNeon00 {
     color: #a35ff2;
+}
+
+@media screen and (max-width: 425px) {
+    .hero-content br.responsive-break {
+        display: none;
+    }
+
+    .hero-images {
+        gap: .5em;
+    }
+
+    .hero-images .side img {
+        height: 24px;
+    }
+
+    .hero-content .logo img {
+        width: 12em;
+    }
+
+    .hero-content .hero-images > picture:nth-child(1),
+    .hero-content .hero-images > picture:nth-child(3) {
+        display: none;
+    }
+
+    .hero-content .info {
+        font-size: .9em;
+    }
+
+    .hero-content .pink-rectangle {
+        padding: .5em 1em;
+        border-radius: 2em;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        word-break: break-all;
+        overflow-wrap: anywhere;
+    }
 }

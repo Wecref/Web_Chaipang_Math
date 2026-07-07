@@ -27,42 +27,6 @@ div.contents-card {
     object-fit: cover;
 }
 
-@media screen and (max-width: 1024px) {
-    div.contents-card {
-        font-size: .95em;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    div.contents-card {
-        font-size: .9em;
-    }
-}
-
-@media screen and (max-width: 525px) {
-    div.contents-card {
-        font-size: .85em;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    div.contents-card {
-        font-size: .7em;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    div.contents-card {
-        font-size: .6em;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    div.contents-card {
-        font-size: .5em;
-    }
-}
-
 div.contents-card .title {
     display: flex;
     flex-direction: column;
@@ -144,7 +108,6 @@ html[lang="en"] .contents-card .math-title-wrap .title-text {
 }
 
 #contents-main + span + .contents-card {
-    padding-top: 4em;
     padding-bottom: 14em;
     justify-content: flex-start;
 }
@@ -387,6 +350,13 @@ html[lang="en"] .contents-card .math-title-wrap .title-text {
     position: relative;
 }
 
+#contents-main + span + .contents-card .showcase-step .step-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+
 #contents-main + span + .contents-card .showcase-step .step-text {
     position: absolute;
     bottom: 0;
@@ -411,11 +381,11 @@ html[lang="en"] .contents-card .math-title-wrap .title-text {
     color: #a35ff2;
 }
 
-#contents-main + span + .contents-card .showcase-step .step-item:nth-child(3) .step-text {
+#contents-main + span + .contents-card .showcase-step .step-group:last-child .step-text {
     color: #ffc200;
 }
 
-#contents-main + span + .contents-card .showcase-step .step-item:nth-child(3) .step-text .highlight {
+#contents-main + span + .contents-card .showcase-step .step-group:last-child .step-text .highlight {
     color: #ffa000;
 }
 
@@ -432,11 +402,11 @@ html[lang="en"] .contents-card .math-title-wrap .title-text {
     height: auto;
 }
 
-#contents-main + span + .contents-card .showcase-step > a:nth-child(4) {
+#contents-main + span + .contents-card .showcase-step .step-group:last-child > a {
     align-self: flex-end;
 }
 
-#contents-main + span + .contents-card .showcase-step > a:nth-child(4) img {
+#contents-main + span + .contents-card .showcase-step .step-group:last-child > a img {
     width: 7.2em;
     max-width: 216px;
     height: auto;
@@ -505,7 +475,7 @@ body > div:nth-child(11) > div.info > div > div:nth-child(3) > div {
     padding-top: .5em;
 }
 
-div.contents-card .pink-rectangle {
+div.contents-card > .pink-rectangle {
     background-color: #ff75c7;
     border-radius: 120px;
     padding: .5em 1.5em;
@@ -516,10 +486,12 @@ div.contents-card .pink-rectangle {
     font-size: 1.33em;
 }
 
-div.contents-card .pink-rectangle p {
+div.contents-card > .pink-rectangle p {
     margin: 0em;
     color: #ffffff;
     text-align: center;
+    word-break: break-all;
+    overflow-wrap: anywhere;
 }
 
 div.contents-card .info {
@@ -654,8 +626,104 @@ div.contents-card .link img {
 }
 
 @media screen and (max-width: 425px) {
+    .contents-card .math-title-wrap {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .contents-card .math-title-wrap .title-text p {
+        font-size: clamp(11px, 3.4375vw, 21px);
+    }
+
+    div.contents-card > .pink-rectangle {
+        width: 95%;
+        max-width: 95%;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+
+    .contents-card .info > picture {
+        display: none;
+    }
+
+    #contents-main + span + .contents-card .showcase-type03 img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    #contents-main + span + .contents-card .showcase-step {
+        flex-wrap: wrap;
+    }
+
+    #contents-main + span + .contents-card .showcase-step img {
+        width: 9em;
+        max-width: 200px;
+    }
+
+    #contents-main + span + .contents-card .showcase-step .step-buttons img {
+        width: 4em;
+        max-width: 100px;
+    }
+
+    #contents-main + span + .contents-card .showcase-step .step-group {
+        width: 90%;
+        justify-content: center;
+    }
+
+    #contents-main + span + .contents-card .showcase-step .step-group:last-child > a img {
+        width: 4em;
+        max-width: 100px;
+    }
+
+    #contents-main + span + .contents-card .showcase-step .step-text {
+        font-size: .7em;
+    }
+
+    #contents-main + span + .contents-card .info .texts h1 {
+        font-size: clamp(12px, .9em, 18px);
+        text-align: center;
+    }
+
+    #contents-main + span + .contents-card .info .texts p {
+        font-size: clamp(10px, .7em, 14px);
+        text-align: center;
+    }
+
+    #contents-main + span + .contents-card .info .texts {
+        align-items: center;
+    }
+
+    #contents-main + span + .contents-card .info .texts .screenshots {
+        justify-content: center;
+        margin-top: 0;
+    }
+
+    #contents-main + span + .contents-card .info .texts img {
+        margin: 0;
+    }
+
+    #contents-main + span + .contents-card .info .texts > div:not(.screenshots) {
+        background: none;
+        padding: 0;
+        border-radius: 0;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+    }
+
+    #contents-main + span + .contents-card .info .texts > div > div:nth-child(2) {
+        align-self: center;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #contents-main + span + .contents-card .info .texts > div:first-child {
+        margin-top: 1em;
+    }
+
     #contents-main + span + .contents-card {
-        padding-bottom: 20em;
+        padding-bottom: 8em;
     }
     #menu-addition + .contents-card {
         padding-bottom: 12em;
@@ -666,9 +734,6 @@ div.contents-card .link img {
 }
 
 @media screen and (max-width: 375px) {
-    #contents-main + span + .contents-card {
-        padding-bottom: 26em;
-    }
     #menu-subtraction + .contents-card {
         padding: 1em 0 11em;
     }
