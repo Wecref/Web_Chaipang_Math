@@ -90,7 +90,17 @@ div.contents-card .title img {
     font-family: inherit;
     font-size: inherit;
     margin: 0;
+    white-space: nowrap;
 }
+
+.text-dt { display: inline; }
+.text-mb { display: none; }
+.add-dt { display: inline; }
+.add-mb { display: none; }
+.sub-dt { display: inline; }
+.sub-mb { display: none; }
+.mul-dt { display: inline; }
+.mul-mb { display: none; }
 
 .contents-card .math-title-wrap .title-text .highlight {
     color: #a35ff2;
@@ -269,15 +279,15 @@ html[lang="en"] .contents-card .math-title-wrap .title-text {
 
 #contents-main + span + .contents-card .info .texts > div:not(.screenshots) {
     background-color: #f6eeff;
-    padding: 1.5em;
-    padding-left: 0;
-    padding-top: 0;
-    padding-right: 3em;
+    padding: 0 .5em .5em 0;
     border-radius: .5em;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    container-type: inline-size;
     align-items: flex-start;
     flex-wrap: wrap;
-    height: 4.33em;
-    box-sizing: border-box;
 }
 
 #contents-main + span + .contents-card .info .texts > div > div:nth-child(2) {
@@ -433,6 +443,8 @@ html[lang="en"] .contents-card .math-title-wrap .title-text {
     font-family: "NanumSquareR";
     font-size: 0.83em;
     color: #686868;
+    padding-left: 0.83em;
+    text-indent: -0.83em;
 }
 
 #contents-main + span + .contents-card .info .texts p::before {
@@ -482,6 +494,10 @@ div.contents-card > .pink-rectangle {
     margin-bottom: .5em;
     font-family: "NanumSquareEB";
     font-size: 1.33em;
+}
+
+#menu-addition + .contents-card > .pink-rectangle {
+    width: auto;
 }
 
 div.contents-card > .pink-rectangle p {
@@ -781,6 +797,15 @@ div.contents-card .link img {
         padding-left: 0.83em;
         text-indent: -0.83em;
     }
+
+    .text-dt { display: none; }
+    .text-mb { display: inline; }
+    .add-dt { display: none; }
+    .add-mb { display: inline; }
+    .sub-dt { display: none; }
+    .sub-mb { display: inline; }
+    .mul-dt { display: none; }
+    .mul-mb { display: inline; }
 
     #contents-main + span + .contents-card .info .texts img {
         width: 15cqi;
