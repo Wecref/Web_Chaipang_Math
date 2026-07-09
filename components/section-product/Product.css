@@ -625,7 +625,7 @@ div.contents-card .link img {
 
 @media screen and (max-width: 768px) {
     .contents-card .math-title-wrap {
-        max-width: min(24.5em, 100%);
+        max-width: min(80cqi, 100%);
         container-type: inline-size;
         overflow: hidden;
     }
@@ -669,18 +669,25 @@ div.contents-card .link img {
         flex-direction: column;
     }
 
+    #menu-addition + .contents-card .info > picture,
+    #menu-subtraction + .contents-card .info > picture,
+    #menu-multiplication + .contents-card .info > picture {
+        font-size: clamp(14px, 1.458vw + 7.8px, 19px);
+    }
+
     #menu-addition + .contents-card .info .texts,
     #menu-subtraction + .contents-card .info .texts,
     #menu-multiplication + .contents-card .info .texts {
         align-items: flex-start;
         width: fit-content;
         margin: 0 auto;
+        font-size: clamp(12px, 3.5vw, 26px);
     }
 
     #menu-addition + .contents-card .info .texts h1,
     #menu-subtraction + .contents-card .info .texts h1,
     #menu-multiplication + .contents-card .info .texts h1 {
-        font-size: clamp(11px, .75em, 14px);
+        font-size: 1em;
     }
 
     #contents-main + span + .contents-card .showcase-type03 {
@@ -746,6 +753,7 @@ div.contents-card .link img {
         width: 100%;
         align-items: center;
         container-type: inline-size;
+        gap: 2em;
     }
 
     #contents-main + span + .contents-card .info {
@@ -784,7 +792,7 @@ div.contents-card .link img {
         gap: .5em;
         justify-content: center;
         max-width: 90cqi;
-        margin-top: -.5em;
+        margin-top: -1.5em;
         margin-bottom: 1em;
     }
 
@@ -848,7 +856,9 @@ div.contents-card .link img {
     #menu-subtraction + .contents-card .pink-rectangle,
     #menu-multiplication + .contents-card .pink-rectangle {
         margin-bottom: 0;
-        padding: 1em 5em;
+        padding: .6em 1em;
+        border-radius: 0.86em;
+        width: 100%;
     }
 }
 
