@@ -873,6 +873,7 @@ div.contents-card .link img {
         margin-bottom: 0;
         padding: .6em 1em;
         border-radius: 0.86em;
+        max-width: 21em;
         width: 100%;
     }
 }
