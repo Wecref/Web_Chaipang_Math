@@ -32,8 +32,10 @@ span.TxtNeon00 {
 }
 
 
-@media screen and (max-width: 425px) {
-    br.en.responsive-break {
+
+
+@media screen and (min-width: 769px) {
+    br.responsive-break {
         display: none;
     }
 }
