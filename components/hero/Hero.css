@@ -104,7 +104,7 @@
 
     .hero-content .info p {
         margin-top: 2em;
-        font-size: 0.833em;
+        font-size: clamp(13.9944px, 3.905vw - 2.602px, 27.388px);
     }
 
     .hero-content .pink-rectangle {
@@ -117,12 +117,13 @@
         overflow-wrap: anywhere;
         margin-top: 1em;
         margin-bottom: 2em;
+        font-size: clamp(12px, 2.5625vw, 30px);
     }
 }
 
 @media screen and (min-width: 425px) and (max-width: 768px) {
     .hero-content .logo img {
-        width: 13.33em;
+        width: clamp(186.6px, 31.25vw + 53.8px, 293.8px);
     }
 
     .hero-images .side img {
