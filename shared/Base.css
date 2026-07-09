@@ -34,8 +34,10 @@ span.TxtNeon00 {
 
 
 
+
+
 @media screen and (min-width: 769px) {
-    br.responsive-break {
+    .contents-card br.responsive-break {
         display: none;
     }
 }

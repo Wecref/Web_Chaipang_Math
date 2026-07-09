@@ -636,6 +636,8 @@ div.contents-card .link img {
 
     .contents-card .math-title-wrap .title-text p {
         font-size: clamp(10px, 3.5cqi, 44px);
+        white-space: nowrap;
+        overflow: hidden;
     }
 
     .contents-card .math-title-wrap .math-title img {
@@ -745,7 +747,7 @@ div.contents-card .link img {
         width: auto;
         font-size: clamp(12px, 3.5cqi, 50px);
         margin-top: 2em;
-        padding: 1em 2em;
+        padding: .5em 3em;
         margin-bottom: 2em;
     }
 
@@ -776,6 +778,8 @@ div.contents-card .link img {
 
     #contents-main + span + .contents-card .info .texts p {
         font-size: clamp(10px, 3.5cqi, 50px);
+        padding-left: 0.83em;
+        text-indent: -0.83em;
     }
 
     #contents-main + span + .contents-card .info .texts img {
@@ -881,6 +885,10 @@ div.contents-card .link img {
 
     .contents-card .math-title-wrap {
         max-width: clamp(305px, 33.33vw + 198.3px, 340px);
+    }
+
+    .contents-card .math-title-wrap .title-text p {
+        font-size: clamp(10px, 3.4cqi, 44px);
     }
 }
 
