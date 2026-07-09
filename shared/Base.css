@@ -40,9 +40,6 @@ span.TxtNeon00 {
     .contents-card br.responsive-break {
         display: none;
     }
-    .contents-card .hero-content br.responsive-break {
-        display: inline;
-    }
 }
 
 div#waveDecoDown {

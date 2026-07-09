@@ -87,6 +87,9 @@
     color: #a35ff2;
 }
 
+.hero-dt { display: inline; }
+.hero-mb { display: none; }
+
 @media screen and (max-width: 768px) {
     .hero-images {
         gap: .5em;
@@ -106,6 +109,9 @@
         margin-top: 2em;
         font-size: clamp(13.9944px, 3.905vw - 2.602px, 27.388px);
     }
+
+    .hero-dt { display: none; }
+    .hero-mb { display: inline; }
 
     .hero-content .pink-rectangle {
         padding: .5em 1em;

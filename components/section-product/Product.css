@@ -877,6 +877,16 @@ div.contents-card .link img {
     }
 }
 
+@media screen and (min-width: 769px) and (max-width: 840px) {
+    #contents-main + span + .contents-card .info {
+        flex-wrap: nowrap;
+    }
+
+    #contents-main + span + .contents-card .info .texts > div:not(.screenshots) {
+        flex-wrap: nowrap;
+    }
+}
+
 @media screen and (max-width: 375px) {
     #menu-subtraction + .contents-card {
         padding: 1em 0 11em;
