@@ -705,7 +705,7 @@ div.contents-card .link img {
         flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
-        font-size: clamp(12px, 4.5vw, 18px);
+        font-size: clamp(12px, 4.5vw, 26px);
         max-width: 85%;
         margin-top: 1em;
         margin-bottom: 1em;
@@ -713,7 +713,6 @@ div.contents-card .link img {
 
     #contents-main + span + .contents-card .showcase-step img {
         width: 10em;
-        max-width: 200px;
         height: auto;
     }
 
