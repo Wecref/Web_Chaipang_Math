@@ -112,6 +112,9 @@
 
     .hero-dt { display: none; }
     .hero-mb { display: inline; }
+    .hero-mb {
+        font-size: clamp(12px, 3.905vw - 2.602px, 27.388px);
+    }
 
     .hero-content .pink-rectangle {
         padding: .5em 1em;

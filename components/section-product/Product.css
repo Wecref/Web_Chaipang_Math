@@ -921,6 +921,7 @@ div.contents-card .link img {
 @media screen and (max-width: 425px) {
     #contents-main + span + .contents-card .info .texts > div:not(.screenshots) {
         max-width: clamp(284.8px, 36.38vw + 168.4px, 323px);
+        flex-wrap: nowrap;
     }
 
     .contents-card .math-title-wrap {
