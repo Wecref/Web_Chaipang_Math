@@ -842,6 +842,12 @@ div.contents-card .link img {
         height: auto;
     }
 
+    #menu-addition + .contents-card .link,
+    #menu-subtraction + .contents-card .link,
+    #menu-multiplication + .contents-card .link {
+        font-size: clamp(13.9944px, 3.905vw - 2.602px, 24.388px);
+    }
+
     #contents-main + span + .contents-card {
         padding-bottom: 8em;
     }
