@@ -770,7 +770,8 @@ div.contents-card .link img {
     }
 
     #contents-main + span + .contents-card .info .texts .screenshots {
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: auto auto;
         gap: .5em;
         justify-content: center;
         max-width: 90cqi;
@@ -814,8 +815,7 @@ div.contents-card .link img {
     }
 
     #contents-main + span + .contents-card .info .texts .screenshots picture {
-        flex: 0 0 calc(50% - .25em);
-        max-width: 140px;
+        max-width: clamp(140px, 25.45vw + 58.6px, 254px);
     }
 
     #contents-main + span + .contents-card .info .texts .screenshots img {
