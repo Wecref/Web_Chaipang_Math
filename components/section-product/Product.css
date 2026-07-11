@@ -912,6 +912,12 @@ div.contents-card .link img {
     }
 }
 
+@media screen and (min-width: 769px) {
+    #menu-addition + .contents-card > .pink-rectangle {
+        font-size: clamp(16.75px, 1.9007vw + 2.13px, 38.62px);
+    }
+}
+
 @media screen and (max-width: 375px) {
     #menu-subtraction + .contents-card {
         padding: 1em 0 11em;
