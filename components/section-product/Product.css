@@ -185,7 +185,7 @@ html[lang="en"] .contents-card .math-title-wrap .title-text {
 #menu-addition + .contents-card .info .texts h1 {
     font-size: 1em;
     color: #ff75c7;
-    margin: 0em;
+    margin: 0 0 .15em;
 }
 
 #menu-addition + .contents-card .info .texts p {
@@ -223,7 +223,7 @@ html[lang="en"] .contents-card .math-title-wrap .title-text {
 #menu-subtraction + .contents-card .info .texts h1,
 #menu-multiplication + .contents-card .info .texts h1 {
     font-size: 1em;
-    margin: 0em;
+    margin: 0 0 .15em;
 }
 
 #menu-multiplication + .contents-card .info .texts h1 {
@@ -547,7 +547,7 @@ div.contents-card .info .texts img {
 div.contents-card .info .texts h1 {
     font-size: .9em;
     color: #ff75c7;
-    margin: 0em;
+    margin: 0 0 .15em;
 }
 
 div.contents-card .info .texts p {
